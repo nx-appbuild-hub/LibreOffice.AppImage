@@ -6,8 +6,10 @@ all:
 	wget -O $(DESTINATION)  -c $(SOURCE)
 	chmod +x $(DESTINATION)
 	./$(DESTINATION) --appimage-extract
-	rm squashfs-root/libreoffice6.4-startcenter.png
+	rm -f squashfs-root/libreoffice6.4-startcenter.png
+	rm -f squashfs-root/startcenter.desktop
 	cp icon.svg squashfs-root/libreoffice6.4-startcenter.svg
+	cp startcenter.desktop squashfs-root/startcenter.desktop
 	export ARCH=x86_64 && bin/appimagetool.AppImage squashfs-root $(DESTINATION)
 	rm -rf squashfs-root
 	chmod +x $(DESTINATION)
