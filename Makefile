@@ -3,7 +3,7 @@ DESTINATION="LibreOffice.AppImage"
 
 all:
 	echo "Building: $(OUTPUT)"
-	wget -O $(DESTINATION)  -c $(SOURCE)
+	wget --output-document=$(DESTINATION)  --continue $(SOURCE)
 	chmod +x $(DESTINATION)
 	./$(DESTINATION) --appimage-extract
 	rm -f squashfs-root/libreoffice6.4-startcenter.png
