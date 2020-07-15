@@ -26,10 +26,10 @@ export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}
 cd ${OWD}
 
 case "$1" in
-  '--writer') exec ${APPDIR}/opt/libreoffice6.4/program/swriter $2 ;;
-  '--spreadsheets')   exec ${APPDIR}/opt/libreoffice6.4/program/scalc $2 ;;
-  '--presentation')   exec ${APPDIR}/opt/libreoffice6.4/program/simpress $2 ;;
-  '--math')   exec ${APPDIR}/opt/libreoffice6.4/program/smath $2 ;;
-  '--base')   exec ${APPDIR}/opt/libreoffice6.4/program/sbase $2 ;;
-  *)   exec ${APPDIR}/opt/libreoffice6.4/program/soffice $@ ;;
+  '--writer') exec ${APPDIR}/opt/libreoffice6.4/program/swriter "$2" ;;
+  '--spreadsheets')   exec ${APPDIR}/opt/libreoffice6.4/program/scalc "$2" ;;
+  '--presentation')   exec ${APPDIR}/opt/libreoffice6.4/program/simpress "$2" ;;
+  '--math')   exec ${APPDIR}/opt/libreoffice6.4/program/smath "$2" ;;
+  '--base')   exec ${APPDIR}/opt/libreoffice6.4/program/sbase "$2" ;;
+  *)   exec ${APPDIR}/opt/libreoffice6.4/program/soffice "$@" ;;
 esac

@@ -22,7 +22,6 @@ GenericName=Libre-Office
 Version=1.0
 Terminal=false
 NoDisplay=false
-Icon=libreoffice6.4-startcenter
 Type=Application
 Categories=Office;WordProcessor;Spreadsheet;Presentation;X-Red-Hat-Base;X-SuSE-Core-Office;X-MandrivaLinux-Office-Other;
 Exec=libreoffice6.4 %U
@@ -30,12 +29,11 @@ MimeType=application/vnd.openofficeorg.extension;x-scheme-handler/vnd.libreoffic
 Comment=The office productivity suite compatible to the open and standardized ODF document format. Supported by The Document Foundation.
 StartupNotify=true
 X-GIO-NoFuse=true
-StartupWMClass=libreoffice-startcenter
+StartupWMClass=libreoffice
 X-KDE-Protocols=file,http,ftp,webdav,webdavs
 X-AppImage-Version=fresh.full
-
-##Define Actions
 Actions=Writer;Spreadsheets;Presentation;Draw;Database;Math;
+Icon=libreoffice
 
 
 [Desktop Action Writer]
@@ -44,7 +42,6 @@ GenericName=Libre-Office Writer
 Exec=libreoffice6.4 --writer
 MimeType=application/wps-office.wps;application/wps-office.wpt;application/wps-office.wpso;application/wps-office.wpss;application/wps-office.doc;application/wps-office.dot;application/vnd.ms-word;application/msword;application/x-msword;application/msword-template;application/wps-office.docx;application/wps-office.dotx;application/rtf;application/vnd.ms-word.document.macroEnabled.12;application/vnd.openxmlformats-officedocument.wordprocessingml.document;x-scheme-handler/ksoqing;x-scheme-handler/ksowps;x-scheme-handler/ksowpp;x-scheme-handler/ksoet;x-scheme-handler/ksowpscloudsvr;x-scheme-handler/ksowebstartupwps;x-scheme-handler/ksowebstartupet;x-scheme-handler/ksowebstartupwpp;
 StartupNotify=false
-Icon=libreoffice6.4-startcenter
 
 [Desktop Action Spreadsheets]
 Name=Libre-Office Spreadsheets
@@ -52,7 +49,6 @@ GenericName=Libre-Office Spreadsheets
 Exec=libreoffice6.4 --calc
 MimeType=application/wps-office.et;application/wps-office.ett;application/wps-office.ets;application/wps-office.eto;application/wps-office.xls;application/wps-office.xlt;application/vnd.ms-excel;application/msexcel;application/x-msexcel;application/wps-office.xlsx;application/wps-office.xltx;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 StartupNotify=false
-Icon=libreoffice6.4-startcenter
 
 [Desktop Action Presentation]
 Name=Libre-Office Presentation
@@ -60,27 +56,23 @@ GenericName=Libre-Office Presentation
 MimeType=application/wps-office.dps;application/wps-office.dpt;application/wps-office.dpss;application/wps-office.dpso;application/wps-office.ppt;application/wps-office.pot;application/vnd.ms-powerpoint;application/vnd.mspowerpoint;application/mspowerpoint;application/powerpoint;application/x-mspowerpoint;application/wps-office.pptx;application/wps-office.potx;application/vnd.openxmlformats-officedocument.presentationml.presentation;application/vnd.openxmlformats-officedocument.presentationml.slideshow
 Exec=libreoffice6.4 --impress
 StartupNotify=false
-Icon=libreoffice6.4-startcenter
 
 [Desktop Action Draw]
 Name=Libre-Office Draw
 GenericName=Libre-Office Draw
 Exec=libreoffice6.4 --draw
 StartupNotify=false
-Icon=libreoffice6.4-startcenter
 
 [Desktop Action Database]
 Name=Libre-Office Database
 GenericName=Libre-Office Database
 Exec=libreoffice6.4 --base
 StartupNotify=false
-Icon=libreoffice6.4-startcenter
 
 [Desktop Action Math]
 Name=Libre-Office Math
 GenericName=Libre-Office Math
 Exec=libreoffice6.4 --math
 StartupNotify=false
-Icon=libreoffice6.4-startcenter
 
 ##End of actions menu

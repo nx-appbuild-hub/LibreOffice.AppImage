@@ -11,7 +11,7 @@ all:
 	rm -f squashfs-root/libreoffice6.4-startcenter.png
 	rm -f squashfs-root/startcenter.desktop
 
-	cp --force icon.svg squashfs-root/libreoffice6.4-startcenter.svg
+	cp --force libreoffice.svg squashfs-root/
 	cp --force startcenter.desktop squashfs-root/startcenter.desktop
 	cp --force AppRun squashfs-root/AppRun
 
