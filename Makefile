@@ -24,7 +24,7 @@ all:
 
 	./$(DESTINATION) --appimage-extract
 
-	rm -f squashfs-root/libreoffice6.4-startcenter.png
+	rm -f squashfs-root/libreoffice7.0-startcenter.png
 	rm -f squashfs-root/startcenter.desktop
 
 	cp --force libreoffice.svg squashfs-root/

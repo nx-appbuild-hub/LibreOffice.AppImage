@@ -17,19 +17,19 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 set -ex
 
-PATH=${PATH}:${APPDIR}/opt/libreoffice6.4/program
+PATH=${PATH}:${APPDIR}/opt/libreoffice7.0/program
 export PATH=${PATH}
 
-LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${APPDIR}/opt/libreoffice6.4/program
+LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${APPDIR}/opt/libreoffice7.0/program
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}
 
 cd ${OWD}
 
 case "$1" in
-  '--writer') exec ${APPDIR}/opt/libreoffice6.4/program/swriter "$2" ;;
-  '--spreadsheets')   exec ${APPDIR}/opt/libreoffice6.4/program/scalc "$2" ;;
-  '--presentation')   exec ${APPDIR}/opt/libreoffice6.4/program/simpress "$2" ;;
-  '--math')   exec ${APPDIR}/opt/libreoffice6.4/program/smath "$2" ;;
-  '--base')   exec ${APPDIR}/opt/libreoffice6.4/program/sbase "$2" ;;
-  *)   exec ${APPDIR}/opt/libreoffice6.4/program/soffice "$@" ;;
+  '--writer') exec ${APPDIR}/opt/libreoffice7.0/program/swriter "$2" ;;
+  '--spreadsheets')   exec ${APPDIR}/opt/libreoffice7.0/program/scalc "$2" ;;
+  '--presentation')   exec ${APPDIR}/opt/libreoffice7.0/program/simpress "$2" ;;
+  '--math')   exec ${APPDIR}/opt/libreoffice7.0/program/smath "$2" ;;
+  '--base')   exec ${APPDIR}/opt/libreoffice7.0/program/sbase "$2" ;;
+  *)   exec ${APPDIR}/opt/libreoffice7.0/program/soffice "$@" ;;
 esac
